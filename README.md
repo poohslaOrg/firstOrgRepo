@@ -1,4 +1,4 @@
 # firstOrgRepo
 
 내용수정?
-worldSeries
+world sd Series
