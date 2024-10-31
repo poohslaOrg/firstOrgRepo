@@ -1,4 +1,6 @@
 # firstOrgRepo
 
 내용수정?
-worldSeries in 5
+
+world sd Series
+
