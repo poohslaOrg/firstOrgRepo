@@ -5,3 +5,6 @@ Test Result
 rebase
 
 merger
+
+squash
+merge
