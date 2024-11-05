@@ -7,3 +7,4 @@ rebase
 merger
 
 squash
+merge
