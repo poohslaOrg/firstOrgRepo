@@ -1,0 +1,19 @@
+name: Notify Team on New Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write  # 이슈에 댓글을 달기 위한 권한
+    steps:
+      - name: Mention Team in Issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} \
+            --repo ${{ github.repository }} \
+            --body "새로운 이슈가 등록되었습니다. 확인 부탁드립니다! cc @poohslaOrg/testTeam"
